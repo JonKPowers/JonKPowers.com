@@ -1,0 +1,139 @@
+/**************************
+Base Styles
+**************************/
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    color: #3a3a3a;
+    margin: 0;
+    min-height: 100vh;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%
+} /*Make those images responsive!*/
+
+
+/**************************
+Navigation
+**************************/
+
+.main-nav {
+    margin-top: 5px;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+}
+.main-nav a{
+    font-size: 0.95em;
+    color: #3acec2; /*CHANGE THIS COLOR!*/
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    padding: 10px 15px;
+}
+
+.main-nav a:hover {
+    color: #093a58;
+}
+
+/**************************
+Layout containers
+**************************/
+
+.main-header {
+    padding: 0.5em 0 0.5em 0;
+}
+
+.main-header,
+.content-wrapper {
+    width: 93%;
+    margin: 0 auto;
+}
+
+/**************************
+CSS Animation Items
+**************************/
+
+.social {
+    list-style: none;
+}
+
+.social li {
+	background-color: #B5B5B5;
+	border: 2px solid #B5B5B5;
+	border-radius: 50%;
+	float: left;
+	height: 36px;
+	line-height: 36px;
+	margin: 0 8px 0 0;
+	padding: 0;
+	text-align: center;
+	width: 36px;
+	transition: all 0.5s ease 0s;
+
+}
+.social li:hover {
+	transform: scale(1.15) rotate(360deg);
+    border: 2px solid #2c3e50;
+    background: #2c3e50;
+}
+
+.social li a {
+	color: #EDEFF1;
+}
+
+.social li a i {
+	font-size: 16px;
+	margin: 0 0 0 5px;
+	color: #EDEFF1 !important;
+}
+.footer-bottom {
+	background: #E3E3E3;
+	border-top: 1px solid #DDDDDD;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+
+@media (min-width: 769px) {
+    .main-header,
+    .content-wrapper {
+        width: 80%;
+        margin: 0 auto;
+        max-width: 1150px;
+    }
+
+    .main-header,
+    .main-nav {
+        display: flex;
+    }
+
+    .main-header {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1025px) {
+    .main-header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

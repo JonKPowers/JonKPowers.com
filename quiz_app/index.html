@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizzlet</title>
+    <link rel = "stylesheet" type = "text/css" href = "normalize.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="new_style.css">
+</head>
+<body>
+    <header class="main-header">
+        <a href="index.html"><img class="logo" src="../img/jkp_logo_green.png"></a>
+        <ul class="main-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="github.html">GitHub</a></li>
+            <li><a href="fun.html">Fun</a></li>
+        </ul>
+    </header>
+
+    <div class="wrapper">
+        <div id="header-container">
+            <h1>Awesome Quiz</h1
+        </div> <!--/div header-container-->
+        <div class="quiz-container" id="quiz-container">
+            <div id="question-container">
+                <h2 id="question" class="headline-secondary--grouped"></h2>
+            </div> <!-- question-container div-->
+
+            <div id="answers-container">
+
+                <p id="choice0"></p>
+                <button id="guess0" class="button">Select Answer</button>
+
+                <p id="choice1"></p>
+                <button id="guess1" class="button">Select Answer</button>
+            </div> <!--answers-container div-->
+        </div> <!--quiz-container div-->
+    </div> <!--main-container div-->
+
+    <div id="footer-container" class="wrapper">
+        <footer>
+            <ul id="progress">
+
+            </ul>
+            <p>Add admin panel button</p>
+            <p>Add play again button</p>
+        </footer
+    </div> <!--/footer-container div-->
+
+    <script src="quiz.js"></script>
+    <script src="question.js"></script>
+    <script src="quiz_ui.js"></script>
+    <script src="app.js"></script>
+    </body>
+</html>

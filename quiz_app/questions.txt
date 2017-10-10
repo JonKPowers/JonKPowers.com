@@ -1,0 +1,3 @@
+const question1 = new Question("Who is the prettiest girl in the world?", ["Baby!", "Lady the bad dog"], "Baby!");
+const question2 = new Question("Who is the worst dog in the world", ["Bad dog", "Loki the Good"], "Bad dog");
+const question3 = new Question("Was Loki ever ever a naughty puppy?", ["Nope!", "Of course he was!"], "Nope!");

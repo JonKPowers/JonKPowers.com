@@ -1,0 +1,80 @@
+/************************
+General Styles
+************************/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding-top: 2.5em;
+    color: #797e83;
+    font-size: 16px;
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.5; }
+}
+
+footer {
+    border-top: 1px solid #ebecec;
+    margin-top: 1.375em; }
+
+footer p {
+    font-size: 1em;
+    margin-top: 1.375em;
+}
+
+#header-container {
+    margin: 5px auto;
+    color: #525559;
+    margin-top: 0; }
+
+p {
+    margin: .8em 0;
+    font-weight: 300;
+    font-size: 1.125em;
+    line-height: 1.5; }
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.button {
+    background-color: #52bab3;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 0.4em;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.875em;
+    font-weight: 400;
+    transition: opacity 0.3s;
+    display: block; }
+
+.quiz-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#progress {
+    border: .5px solid #DDD;
+    margin-top: 15px;
+}
+
+#progress li {
+  display: block;
+  padding: 5px;
+  position: relative;
+  color: #222;
+  background: #66EE99;
+  font-weight: bold;
+}
+
+
+
+@media (min-width: 769px) {
+    .quiz-container {
+        flex-direction: row;
+    }
+}
